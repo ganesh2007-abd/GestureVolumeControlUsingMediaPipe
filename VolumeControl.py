@@ -60,8 +60,8 @@ while True:
 
         print(length)
         # vol = np.interp(length,[20,160],[0.25,1.0])
-        vol = np.interp(length,[20,160],[minVol,maxVol])
-
+        # vol = np.interp(length,[20,160],[minVol,maxVol])
+        vol = np.interp(length,[20,160],[0.0,1.0])
 
         volume.SetMasterVolumeLevelScalar(vol, None)
 
